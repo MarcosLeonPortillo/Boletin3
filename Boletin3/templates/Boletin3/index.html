@@ -6,9 +6,11 @@
     <title>index</title>
 </head>
 <body>
-    <form method="get">
+    <form method="post">
+    {% csrf_token %}
+
     {{ form.as_p }}
-    <input type="submit" value="Enviar"/>
+    <input type="submit" value="Subir imagen"/>
 </form>
 </body>
 </html>
